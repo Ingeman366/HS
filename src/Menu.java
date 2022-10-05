@@ -38,5 +38,12 @@ public class Menu {
             return readChoice();
         }
     }
+    public ArrayList<String> standardMenu() {
+        ArrayList<String> menuItems = new ArrayList<>();
+        menuItems.add("Create Booking");
+        menuItems.add("Cancel Booking");
+        menuItems.add("Business Economy");
+        return menuItems;
+    }
 
 }

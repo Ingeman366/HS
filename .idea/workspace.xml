@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa2ca724-066d-440d-94ab-5fa7634c3e09" name="Changes" comment="Menu update">
+      <change afterPath="$PROJECT_DIR$/src/MenuActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
@@ -48,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664954311665</updated>
-      <workItem from="1664954313091" duration="5964000" />
+      <workItem from="1664954313091" duration="9099000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1664954551397</created>
@@ -71,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664958574753</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Menu update">
+      <created>1664961443328</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664961443328</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

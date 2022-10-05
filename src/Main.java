@@ -1,22 +1,17 @@
 import java.util.ArrayList;
 
 public class Main {
-    void run(){
+    void run() {
         Calender calender = new Calender();
-        standardMenu();
-
+        MenuActions menuActions = new MenuActions();
+        Menu menu = new Menu(menuActions.standardHead(), menuActions.standardLead(), menuActions.standardMenu());
+        menu.readChoice();
 
     }
+
     public static void main(String[] args) {
-    new Main().run();}
-
-    void standardMenu(){
-        ArrayList<String> menuItems = new ArrayList<>();
-        menuItems.add("Create Booking");
-        menuItems.add("Cancel Booking");
-        menuItems.add("Business Economy");
-        Menu menu = new Menu("Welcome to Hairy's hair saloon","Chose action",menuItems);
-        menu.printMenu();
-
+        new Main().run();
     }
+
+
 }

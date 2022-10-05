@@ -1,3 +1,5 @@
+import org.w3c.dom.Text;
+
 public class Day {
     private boolean holiday;
     private Booking book1;
@@ -18,13 +20,13 @@ public class Day {
 
     @Override
     public String toString() {
-        return "Dato: " + date +
-                "\n10-11: " + (book1==null? "FRI" : book1) +
-                "\n11-12: " + (book2==null? "FRI" : book2) +
-                "\n13-14: " + (book3==null? "FRI" : book3) +
-                "\n14-15: " + (book4==null? "FRI" : book4) +
-                "\n15-16: " + (book5==null? "FRI" : book5) +
-                "\n16-17: " + (book6==null? "FRI" : book6) +
-                "\n17-18: " + (book7==null? "FRI" : book7);
+        return "Date: " + date +
+                "\n10-11: " + (book1==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book1) +
+                "\n11-12: " + (book2==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book2) +
+                "\n13-14: " + (book3==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book3) +
+                "\n14-15: " + (book4==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book4) +
+                "\n15-16: " + (book5==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book5) +
+                "\n16-17: " + (book6==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book6) +
+                "\n17-18: " + (book7==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : book7);
     }
 }
