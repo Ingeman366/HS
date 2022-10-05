@@ -13,6 +13,7 @@ public class MenuText {
         menuItems.add("Create Booking");
         menuItems.add("Cancel Booking");
         menuItems.add("Business Economy");
+        menuItems.add("EXIT PROGRAM");
         return menuItems;
     }
 
