@@ -14,6 +14,8 @@ public class Menu {
         this.menuItems = menuItems;
     }
 
+
+
     public void printMenu() {
         int menuSize = menuItems.size();
         System.out.println(menuHeader);
