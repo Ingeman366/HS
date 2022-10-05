@@ -2,7 +2,10 @@ import java.util.ArrayList;
 
 public class Main {
     void run(){
+        Calender calender = new Calender();
         standardMenu();
+
+
     }
     public static void main(String[] args) {
     new Main().run();}
@@ -13,5 +16,7 @@ public class Main {
         menuItems.add("Cancel Booking");
         menuItems.add("Business Economy");
         Menu menu = new Menu("Welcome to Hairy's hair saloon","Chose action",menuItems);
+        menu.printMenu();
+
     }
 }
