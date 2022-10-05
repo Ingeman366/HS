@@ -8,6 +8,14 @@ public class Day {
     private Booking book6;
     private Booking book7;
     private DaysOfTheWeek daysOfTheWeek;
+    private int date;
+    private static int superDate = 1;
+
+
+    public Day(DaysOfTheWeek daysOfTheWeek,int date){
+        this.daysOfTheWeek = daysOfTheWeek;
+        this.date = superDate++;
+    }
 
 
 }
