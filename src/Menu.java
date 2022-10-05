@@ -5,7 +5,7 @@ public class Menu {
     private String menuHeader;
     private String leadText;
     private ArrayList<String> menuItems = new ArrayList();
-    private Scanner sc;
+    private Scanner sc = new Scanner(System.in);
 
     public Menu(String menuHeader, String leadText, ArrayList<String> menuItems) {
         this.sc = new Scanner(System.in);
