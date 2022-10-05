@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
 public class Booking {
-
-    private boolean paymentReceived;
-    private String name;
-    private int totalToPay;
     Scanner sc = new Scanner(System.in);
+
+
+    public Booking(Customer name){
+
+
+    }
 
     //TODO get name from costumer class
 
