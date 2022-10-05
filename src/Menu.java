@@ -15,26 +15,25 @@ public class Menu {
     }
 
     public void printMenu() {
-        int menuSize = this.menuItems.size();
-        System.out.println(this.menuHeader);
+        int menuSize = menuItems.size();
+        System.out.println(menuHeader);
 
         for(int i = 0; i < menuSize; ++i) {
-            System.out.println("  " + (i + 1) + ". " + (String)this.menuItems.get(i));
+            System.out.println("  " + (i + 1) + ". " + menuItems.get(i));
         }
 
-        System.out.print(this.leadText);
+        System.out.print(leadText);
     }
 
     public int readChoice() {
         try {
-            int choseMenu = this.sc.nextInt();
-            this.sc.nextLine();
+            int choseMenu = sc.nextInt();
+            sc.nextLine();
             return choseMenu;
         } catch (Exception var2) {
-            System.out.println(this.leadText);
-            System.out.println(var2.getMessage());
-            this.sc.next();
-            return this.readChoice();
+            System.out.println(leadText);
+            sc.next();
+            return readChoice();
         }
     }
 }
