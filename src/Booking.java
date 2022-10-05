@@ -5,4 +5,14 @@ public class Booking {
     private int totalToPay;
 
 
+    public Booking(String name){
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

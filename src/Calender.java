@@ -10,7 +10,9 @@ public class Calender {
         }
     }
 
-    public Day getDate(int date){
-        return daysOfSeptember.get(date-1);
+    public Day getDate(int date) {
+        return daysOfSeptember.get(date - 1);
     }
+
+
 }

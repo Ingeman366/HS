@@ -13,7 +13,10 @@ public class Menu {
         this.leadText = leadText;
         this.menuItems = menuItems;
     }
-
+    public Menu(String menuHeader,String leadText){
+        this.menuHeader = menuHeader;
+        this.leadText = leadText;
+    }
 
 
     public void printMenu() {
@@ -34,16 +37,8 @@ public class Menu {
             return choseMenu;
         } catch (Exception var2) {
             System.out.println(leadText);
-            sc.next();
+            sc.nextLine();
             return readChoice();
         }
     }
-    public ArrayList<String> standardMenu() {
-        ArrayList<String> menuItems = new ArrayList<>();
-        menuItems.add("Create Booking");
-        menuItems.add("Cancel Booking");
-        menuItems.add("Business Economy");
-        return menuItems;
-    }
-
 }
