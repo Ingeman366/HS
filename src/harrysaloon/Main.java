@@ -73,13 +73,13 @@ public class Main {
         calender.getBookingsOnDate(1).setBooking(4,"Philip");
         calender.getBookingsOnDate(1).setBooking(5,"Lene");
         calender.getBookingsOnDate(1).setBooking(6,"Bente");
-        calender.getBookingsOnDate(1).setBooking(0,"Glenn");
-        calender.getBookingsOnDate(1).setBooking(1,"Baune");
-        calender.getBookingsOnDate(1).setBooking(2,"Per");
-        calender.getBookingsOnDate(1).setBooking(3,"Mini");
-        calender.getBookingsOnDate(1).setBooking(4,"Cliff");
-        calender.getBookingsOnDate(1).setBooking(5,"Lone");
-        calender.getBookingsOnDate(1).setBooking(6,"Yvonne");
+        calender.getBookingsOnDate(2).setBooking(0,"Glenn");
+        calender.getBookingsOnDate(2).setBooking(1,"Baune");
+        calender.getBookingsOnDate(2).setBooking(2,"Per");
+        calender.getBookingsOnDate(2).setBooking(3,"Mini");
+        calender.getBookingsOnDate(2).setBooking(4,"Cliff");
+        calender.getBookingsOnDate(2).setBooking(5,"Lone");
+        calender.getBookingsOnDate(2).setBooking(6,"Yvonne");
 
 
 
