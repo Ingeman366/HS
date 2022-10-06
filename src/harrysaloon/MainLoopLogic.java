@@ -2,13 +2,14 @@ package harrysaloon;
 
 import harrysaloon.calender.Calender;
 
-public class Main {
+public class MainLoopLogic {
     Calender calender = new Calender();
     MenuText menuText = new MenuText();
     void run() {
         MenuText menuText = new MenuText();
         Menu menu = new Menu(menuText.standardHead(), menuText.standardLead(), menuText.standardMenu());
         boolean isRunning = true;
+        createEnvironment();
         do { int menuDecide;
             menu.printMenu();
             menuDecide = menu.readIntChoice();
@@ -23,12 +24,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        new Main().run();
+        new MainLoopLogic().run();
     }
     void createBookingMenu(){
         boolean isBookingRunning = true;
         Menu menu = new Menu(menuText.createBooking(), menuText.enterDate());
-        createEnvironment();
         do {int day;
             int choice;
             menu.printMenu();
@@ -77,8 +77,5 @@ public class Main {
         calender.getBookingsOnDate(2).setBooking(4,"Cliff");
         calender.getBookingsOnDate(2).setBooking(5,"Lone");
         calender.getBookingsOnDate(2).setBooking(6,"Yvonne");
-
-
-
     }
 }
