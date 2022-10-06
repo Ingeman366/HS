@@ -39,4 +39,7 @@ public class Day {
     public void setBooking(int i,String name) {
     bookingsArr[i]= new Booking(name);
     }
+    public void setBooking(int i){
+        bookingsArr[i]=null;
+    }
 }

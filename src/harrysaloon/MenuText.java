@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MenuText {
 
     public String standardHead(){
-        return "Welcome to Hairy's hair saloon";
+        return "Welcome to Hairy's hair saloon\n Current month is September 2022";
     }
     public String standardLead(){
         return "Chose action: ";
@@ -23,7 +23,9 @@ public class MenuText {
         return "Enter date: ";
     }
     public String createBooking(){
-        return "Create Booking";
+        return TextColor.WHITE_BACKGROUND + TextColor.BLACK_BOLD + "--Create Booking--" + TextColor.RESET;
     }
-
+    public String cancelBooking(){
+        return TextColor.WHITE_BACKGROUND + TextColor.BLACK_BOLD + "--Cancel Booking--" + TextColor.RESET;
+    }
 }
