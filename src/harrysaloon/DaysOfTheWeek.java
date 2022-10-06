@@ -1,3 +1,5 @@
+package harrysaloon;
+
 public enum DaysOfTheWeek {
 
     THURSDAY,

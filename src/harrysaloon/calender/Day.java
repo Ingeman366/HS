@@ -1,14 +1,19 @@
+package harrysaloon.calender;
+
+import harrysaloon.Booking;
+import harrysaloon.DaysOfTheWeek;
+import harrysaloon.TextColor;
+
 public class Day {
     private boolean holiday;
     private Booking booking;
 
     private DaysOfTheWeek daysOfTheWeek;
     private int date;
-    private static int superDate = 1;
     private Booking[] bookingsArr= new Booking[7];
 
     public Day(int date){
-        this.date = superDate++;
+        this.date = date;
         for (int i = 0; i < bookingsArr.length; i++) {
             this.bookingsArr[i] = booking;
         }

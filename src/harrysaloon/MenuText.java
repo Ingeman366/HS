@@ -1,3 +1,5 @@
+package harrysaloon;
+
 import java.util.ArrayList;
 
 public class MenuText {

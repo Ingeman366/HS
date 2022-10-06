@@ -1,3 +1,5 @@
+package harrysaloon;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,6 +19,9 @@ public class Menu {
         this.menuHeader = menuHeader;
         this.leadText = leadText;
     }
+    public Menu(){
+
+    }
 
 
     public void printMenu() {
@@ -30,7 +35,7 @@ public class Menu {
         System.out.print(leadText);
     }
 
-    public int readChoice() {
+    public int readIntChoice() {
         try {
             int choseMenu = sc.nextInt();
             sc.nextLine();
@@ -38,7 +43,18 @@ public class Menu {
         } catch (Exception var2) {
             System.out.println(leadText);
             sc.nextLine();
-            return readChoice();
+            return readIntChoice();
+        }
+    }
+    public String readStringChoice() {
+        try {
+            String choseMenu = sc.nextLine();
+            sc.nextLine();
+            return choseMenu;
+        } catch (Exception var2) {
+            System.out.println(leadText);
+            sc.nextLine();
+            return readStringChoice();
         }
     }
 }

@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa2ca724-066d-440d-94ab-5fa7634c3e09" name="Changes" comment="Menu update">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/calender/Calender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/calender/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DaysOfTheWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/DaysOfTheWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/MenuText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/TextColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +58,7 @@
       <updated>1664954311665</updated>
       <workItem from="1664954313091" duration="9099000" />
       <workItem from="1664970945604" duration="3371000" />
+      <workItem from="1665038907672" duration="4115000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1664954551397</created>

@@ -1,3 +1,5 @@
+package harrysaloon;
+
 public class TextColor {
         // Reset
         public static final String RESET = "\033[0m";  // Text Reset

@@ -1,8 +1,10 @@
+package harrysaloon;
+
 import java.util.Scanner;
 
 public class Booking {
     Scanner sc = new Scanner(System.in);
-
+    private String name;
 
     public Booking(Customer name){
 
@@ -18,7 +20,7 @@ public class Booking {
 
     @Override
     public String toString() {
-        return "Booking{" +
+        return "harrysaloon.Booking{" +
                 "name='" + name + '\'' +
                 '}';
     }

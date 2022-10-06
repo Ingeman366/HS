@@ -1,3 +1,5 @@
+package harrysaloon;
+
 public class Customer {
     private String name;
     //private int sumTotalOfService;

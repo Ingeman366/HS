@@ -1,3 +1,7 @@
+package harrysaloon;
+
+import harrysaloon.calender.Calender;
+
 public class Main {
     Calender calender = new Calender();
     MenuText menuText = new MenuText();
@@ -7,7 +11,7 @@ public class Main {
         boolean isRunning = true;
         do { int menuDecide;
             menu.printMenu();
-            menuDecide = menu.readChoice();
+            menuDecide = menu.readIntChoice();
             switch (menuDecide) {
                 case 1 -> createBookingMenu();
                 case 2 -> cancelBookingMenu();
@@ -24,15 +28,17 @@ public class Main {
     void createBookingMenu(){
         boolean isBookingRunning = true;
         Menu menu = new Menu(menuText.createBooking(), menuText.enterDate());
+        createEnvironment();
         do {int day;
             int choice;
             menu.printMenu();
-            day = menu.readChoice();
+            day = menu.readIntChoice();
             System.out.println(calender.getBookingsOnDate(day).toString());
             System.out.println("Do want to add a booking today? \n 1: Yes ---- 2: No");
-            choice = menu.readChoice();
+            choice = menu.readIntChoice();
             switch (choice) {
-                case 1 -> addBooking(day);
+                case 1 -> {addBooking(day);
+                    isBookingRunning = false;}
                 case 2 -> isBookingRunning = false;
                 default -> System.out.println("Action not possible");
             }
@@ -42,7 +48,15 @@ public class Main {
 
     }
     void addBooking(int day){
-
+        Menu menu = new Menu();
+        boolean isAddBookingRunning = true;
+        String name;
+        int timeSlot;
+        System.out.println("Enter Customers name: ");
+        name = menu.readStringChoice();
+        System.out.println("Enter desired bookingslot: ");
+        timeSlot = menu.readIntChoice();
+        calender.getBookingsOnDate(day-1).setBooking(timeSlot,name);
     }
     void cancelBookingMenu(){
 
@@ -51,4 +65,7 @@ public class Main {
 
     }
 
+    void createEnvironment(){
+        calender.getBookingsOnDate(0).setBooking(0,"Sebastian");
+    }
 }
