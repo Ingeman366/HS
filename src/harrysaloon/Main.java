@@ -66,13 +66,13 @@ public class Main {
     }
 
     void createEnvironment(){
-        calender.getBookingsOnDate(0).setBooking(0,"Sebastian");
-        calender.getBookingsOnDate(0).setBooking(1,"Oliver");
-        calender.getBookingsOnDate(0).setBooking(2,"Noah");
-        calender.getBookingsOnDate(0).setBooking(3,"Martin");
-        calender.getBookingsOnDate(0).setBooking(4,"Philip");
-        calender.getBookingsOnDate(0).setBooking(5,"Lene");
-        calender.getBookingsOnDate(0).setBooking(6,"Bente");
+        calender.getBookingsOnDate(1).setBooking(0,"Sebastian");
+        calender.getBookingsOnDate(1).setBooking(1,"Oliver");
+        calender.getBookingsOnDate(1).setBooking(2,"Noah");
+        calender.getBookingsOnDate(1).setBooking(3,"Martin");
+        calender.getBookingsOnDate(1).setBooking(4,"Philip");
+        calender.getBookingsOnDate(1).setBooking(5,"Lene");
+        calender.getBookingsOnDate(1).setBooking(6,"Bente");
         calender.getBookingsOnDate(1).setBooking(0,"Glenn");
         calender.getBookingsOnDate(1).setBooking(1,"Baune");
         calender.getBookingsOnDate(1).setBooking(2,"Per");

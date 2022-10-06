@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa2ca724-066d-440d-94ab-5fa7634c3e09" name="Changes" comment="Menu update">
-      <change beforePath="$PROJECT_DIR$/src/harrysaloon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="fa2ca724-066d-440d-94ab-5fa7634c3e09" name="Changes" comment="Menu update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +53,7 @@
       <workItem from="1664954313091" duration="9099000" />
       <workItem from="1664970945604" duration="3371000" />
       <workItem from="1665038907672" duration="4115000" />
-      <workItem from="1665043737699" duration="508000" />
+      <workItem from="1665043737699" duration="829000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1664954551397</created>
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665043855609</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Menu update">
+      <created>1665044367546</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665044367546</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
