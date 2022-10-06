@@ -43,9 +43,6 @@ public class Main {
                 default -> System.out.println("Action not possible");
             }
         } while (isBookingRunning);
-
-
-
     }
     void addBooking(int day){
         Menu menu = new Menu();
@@ -56,7 +53,7 @@ public class Main {
         name = menu.readStringChoice();
         System.out.println("Enter desired bookingslot: ");
         timeSlot = menu.readIntChoice();
-        calender.getBookingsOnDate(day-1).setBooking(timeSlot,name);
+        calender.getBookingsOnDate(day).setBooking(timeSlot,name);
     }
     void cancelBookingMenu(){
 
