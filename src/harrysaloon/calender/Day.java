@@ -37,9 +37,12 @@ public class Day {
                 "  " + TextColor.RESET : bookingsArr[6]);
     }
     public void setBooking(int i,String name) {
-    bookingsArr[i]= new Booking(name);
+        bookingsArr[i]= new Booking(name);
     }
     public void setBooking(int i){
         bookingsArr[i]=null;
+    }
+    public int getDailyEarning(int date){
+
     }
 }

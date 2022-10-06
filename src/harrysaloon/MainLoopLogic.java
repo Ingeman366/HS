@@ -6,6 +6,7 @@ public class MainLoopLogic {
     Calender calender = new Calender();
     MenuText menuText = new MenuText();
     void run() {
+        int currentDate = 15;
         MenuText menuText = new MenuText();
         Menu menu = new Menu(menuText.standardHead(), menuText.standardLead(), menuText.standardMenu());
         boolean isRunning = true;
@@ -16,7 +17,7 @@ public class MainLoopLogic {
             switch (menuDecide) {
                 case 1 -> createBookingMenu();
                 case 2 -> cancelBookingMenu();
-                case 3 -> checkEconomy();
+                case 3 -> checkEconomy(currentDate);
                 case 4 -> isRunning = false;
                 default -> System.out.println("Action not possible");
             }
@@ -52,7 +53,7 @@ public class MainLoopLogic {
         name = menu.readStringChoice();
         System.out.println("Enter desired bookingslot: ");
         timeSlot = menu.readIntChoice();
-        calender.getBookingsOnDate(day).setBooking(timeSlot,name);
+        calender.getBookingsOnDate(day).setBooking(timeSlot-1,name);
         System.out.println("Slot booked succesfully!");
     }
     void cancelBookingMenu(){
@@ -78,11 +79,14 @@ public class MainLoopLogic {
         int timeSlot;
         System.out.println("Which slot do you wish to cancel? ");
         timeSlot = menu.readIntChoice();
-        calender.getBookingsOnDate(day).setBooking(timeSlot);
-        System.out.println("Booking deleted succesfully!");
+        calender.getBookingsOnDate(day).setBooking(timeSlot-1);
+        System.out.println("Booking deleted successfully!");
     }
-    void checkEconomy(){
-
+    void checkEconomy(int currentDate){
+        int ecoCheckDate;
+        Menu menu = new Menu();
+        System.out.println("Which day to you want to check economy from?");
+        ecoCheckDate = menu.readIntChoice();
     }
 
     void createEnvironment(){

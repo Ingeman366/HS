@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MenuText {
 
     public String standardHead(){
-        return "Welcome to Hairy's hair saloon\n Current month is September 2022";
+        return "Welcome to Hairy's hair saloon\n Current date is 15th September 2022";
     }
     public String standardLead(){
         return "Chose action: ";
