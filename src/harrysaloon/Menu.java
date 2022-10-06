@@ -49,7 +49,6 @@ public class Menu {
     public String readStringChoice() {
         try {
             String choseMenu = sc.nextLine();
-            sc.nextLine();
             return choseMenu;
         } catch (Exception var2) {
             System.out.println(leadText);
