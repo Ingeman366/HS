@@ -79,7 +79,7 @@ public class MainLoopLogic {
         int timeSlot;
         System.out.println("Which slot do you wish to cancel? ");
         timeSlot = menu.readIntChoice();
-        calender.getBookingsOnDate(day).setBooking(timeSlot-1);
+        calender.getBookingsOnDate(day).removeBooking(timeSlot-1);
         System.out.println("Booking deleted successfully!");
     }
     void checkEconomy(int currentDate){
