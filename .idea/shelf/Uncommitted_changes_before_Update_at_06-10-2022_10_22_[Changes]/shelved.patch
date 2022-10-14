@@ -1,0 +1,93 @@
+Index: src/harrysaloon/calender/Day.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package harrysaloon.calender;\r\n\r\nimport harrysaloon.Booking;\r\nimport harrysaloon.DaysOfTheWeek;\r\nimport harrysaloon.TextColor;\r\n\r\npublic class Day {\r\n    private boolean holiday;\r\n    private Booking booking;\r\n\r\n    private DaysOfTheWeek daysOfTheWeek;\r\n    private int date;\r\n    private Booking[] bookingsArr= new Booking[7];\r\n\r\n    public Day(int date){\r\n        this.date = date;\r\n        for (int i = 0; i < bookingsArr.length; i++) {\r\n            this.bookingsArr[i] = booking;\r\n        }\r\n\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"Date: \" + date +\r\n            \"\\n10-11: \" + (bookingsArr[0]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[0]) +\r\n            \"\\n11-12: \" + (bookingsArr[1]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[1]) +\r\n            \"\\n13-14: \" + (bookingsArr[2]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[2]) +\r\n            \"\\n14-15: \" + (bookingsArr[3]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[3]) +\r\n            \"\\n15-16: \" + (bookingsArr[4]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[4]) +\r\n            \"\\n16-17: \" + (bookingsArr[5]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[5]) +\r\n            \"\\n17-18: \" + (bookingsArr[6]==null? TextColor.GREEN_BACKGROUND + \"  \" + TextColor.RESET : bookingsArr[6]);\r\n    }\r\n    public void setBooking(int i,String name) {\r\n    bookingsArr[i]= new Booking(name);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/harrysaloon/calender/Day.java b/src/harrysaloon/calender/Day.java
+--- a/src/harrysaloon/calender/Day.java	(revision f758a0c1d8b50aa98d6a5ee8c491504037cadf36)
++++ b/src/harrysaloon/calender/Day.java	(date 1665044219911)
+@@ -23,13 +23,20 @@
+     @Override
+     public String toString() {
+         return "Date: " + date +
+-            "\n10-11: " + (bookingsArr[0]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[0]) +
+-            "\n11-12: " + (bookingsArr[1]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[1]) +
+-            "\n13-14: " + (bookingsArr[2]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[2]) +
+-            "\n14-15: " + (bookingsArr[3]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[3]) +
+-            "\n15-16: " + (bookingsArr[4]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[4]) +
+-            "\n16-17: " + (bookingsArr[5]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[5]) +
+-            "\n17-18: " + (bookingsArr[6]==null? TextColor.GREEN_BACKGROUND + "  " + TextColor.RESET : bookingsArr[6]);
++            "\nSlot [1] 10-11: " + (bookingsArr[0]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[0]) +
++            "\nSlot [2]11-12: " + (bookingsArr[1]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[1]) +
++            "\nSlot [3]13-14: " + (bookingsArr[2]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[2]) +
++            "\nSlot [4]14-15: " + (bookingsArr[3]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[3]) +
++            "\nSlot [5]15-16: " + (bookingsArr[4]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[4]) +
++            "\nSlot [6]16-17: " + (bookingsArr[5]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[5]) +
++            "\nSlot [7]17-18: " + (bookingsArr[6]==null? TextColor.GREEN_BACKGROUND +
++                "  " + TextColor.RESET : bookingsArr[6]);
+     }
+     public void setBooking(int i,String name) {
+     bookingsArr[i]= new Booking(name);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"fa2ca724-066d-440d-94ab-5fa7634c3e09\" name=\"Changes\" comment=\"Menu update\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Booking.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/Booking.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Calender.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/calender/Calender.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Customer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/Customer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Day.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/calender/Day.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/DaysOfTheWeek.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/DaysOfTheWeek.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Menu.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/Menu.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/MenuText.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/MenuText.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/TextColor.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/TextColor.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/User.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/harrysaloon/User.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Enum\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Fhpjx5X4s0GTPEhw5qF5xGteAU\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"fa2ca724-066d-440d-94ab-5fa7634c3e09\" name=\"Changes\" comment=\"\" />\r\n      <created>1664954311665</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1664954311665</updated>\r\n      <workItem from=\"1664954313091\" duration=\"9099000\" />\r\n      <workItem from=\"1664970945604\" duration=\"3371000\" />\r\n      <workItem from=\"1665038907672\" duration=\"4115000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"d\">\r\n      <created>1664954551397</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664954551397</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Menu update\">\r\n      <created>1664958046127</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664958046127</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Menu update\">\r\n      <created>1664958574753</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664958574753</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Menu update\">\r\n      <created>1664961443328</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664961443328</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"d\" />\r\n    <MESSAGE value=\"Menu update\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Menu update\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f758a0c1d8b50aa98d6a5ee8c491504037cadf36)
++++ b/.idea/workspace.xml	(date 1665044248895)
+@@ -2,18 +2,8 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="fa2ca724-066d-440d-94ab-5fa7634c3e09" name="Changes" comment="Menu update">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Booking.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/calender/Calender.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Customer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/calender/Day.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/DaysOfTheWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/DaysOfTheWeek.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/Menu.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/MenuText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/MenuText.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/TextColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/TextColor.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/User.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/harrysaloon/calender/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/harrysaloon/calender/Day.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -58,7 +48,7 @@
+       <updated>1664954311665</updated>
+       <workItem from="1664954313091" duration="9099000" />
+       <workItem from="1664970945604" duration="3371000" />
+-      <workItem from="1665038907672" duration="4115000" />
++      <workItem from="1665038907672" duration="5000000" />
+     </task>
+     <task id="LOCAL-00001" summary="d">
+       <created>1664954551397</created>
+@@ -88,7 +78,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664961443328</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Menu update">
++      <created>1665043591970</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1665043591970</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
